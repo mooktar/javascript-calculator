@@ -1,0 +1,80 @@
+body {
+    width: 100vw;
+    font-family: "Noto Sans JP", sans-serif;
+    background: hsla(138, 82%, 69%, 1);
+    background: linear-gradient(
+        90deg,
+        hsla(138, 82%, 69%, 1) 0%,
+        hsla(186, 100%, 50%, 1) 100%
+    );
+}
+
+#app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator__container {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+table {
+    max-width: 350px;
+    margin-right: auto;
+    margin-left: auto;
+    border: 5px solid #0009;
+    border-collapse: collapse;
+}
+
+table *::selection {
+    color: inherit;
+}
+
+th {
+    width: 100%;
+    text-align: right;
+    line-height: 1.2;
+    padding: 1.2rem 1.5rem;
+    font-size: 2em;
+}
+
+th small {
+    width: 100%;
+    word-break: break-all;
+    font-weight: 200;
+    font-size: 0.9rem;
+    letter-spacing: 0.1em;
+}
+
+td {
+    padding: 1.3rem 1rem !important;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+td#clear {
+    background: rgb(197, 114, 114);
+}
+
+td#equals {
+    background: rgb(114, 160, 197);
+}
+
+td#backward,
+td[data-type="operator"] {
+    background: rgb(45, 45, 45);
+}
+
+td:hover,
+td:focus {
+    background: rgba(60, 60, 60);
+}
